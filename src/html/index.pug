@@ -1,0 +1,21 @@
+doctype html
+html(lang="en")
+  - const name = "Customize.css";
+  include includes/head.pug
+  body.index
+    include includes/nav.pug
+    //- Start home
+    section.home
+      .container
+        .box
+          p You are welcome in
+          h1(translate="no") Customize.css
+          p Modern alternative to reset css & html elements
+          p Customize.css makes all browsers render html page elements better & fixes all the problems in them so that they become more consistent & conform to modern standards.
+          a(href="customize.css" download) Download
+          a(href="get-started") Get Started
+    //- End home
+    include includes/traingle.pug
+    include includes/footer.pug
+    div(class="toggle_2 button center-flex")
+    include includes/loading.pug

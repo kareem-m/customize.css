@@ -1,0 +1,38 @@
+doctype html
+html(lang="en")
+  - const name = "Customize.css";
+  include includes/head.pug
+  body
+    include includes/nav.pug
+    //- Start get-started
+    section.get-started
+      .container
+        h1 Get Started
+        p Get started with customize.css, Modern alternative to reset css & html elements.
+        h2 Quick start
+        p Looking to quickly add customize.css to your project?#[br]Copy-paste the stylesheet #[span= "<link>"] into your #[span= "<head>"] before all other stylesheets to load our CSS.
+        pre
+          code
+            span.elm= "<link "
+            span.attr rel
+            span.val ="stylesheet"
+            span.attr  href
+            span.val ="https://kareem-m.github.io/customize.css/customize.min.css"
+            span.elm >
+        hr
+        h2 Download
+        br
+        h4 Download the minified of customize.css
+        p Download this copy when you are working on a small project or do not want to modify the file#[br]because this file is compressed to take up less space and faster for the site.
+        a(href="customize.min.css" download) Download customize.min.css
+        br
+        br
+        br
+        br
+        h4 Download full customize.css
+        p Download this copy when you are working on a real project or want to modify the file.
+        a(href="customize.css" download) Download customize.css
+    //- End get-started
+    include includes/footer.pug
+    div(class="toggle_2 button center-flex")
+    include includes/loading.pug

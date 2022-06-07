@@ -1,0 +1,101 @@
+doctype html
+html(lang="en")
+  - const name = "Customize.css";
+  include includes/head.pug
+  body
+    include includes/nav.pug
+    //- Start about
+    section.about
+      .container
+        h1 About customize.css
+        p Customize.css is a small css file that improves user agent stylesheet values#[br]so that browsers display all elements more consistently & in compliance with modern standards.
+        p For example:
+        pre
+          code
+            div.elm h1 #[span.val {]
+            div.attr    font-size#[span.val : 2.2em;]
+            div.val }
+            |
+            |
+            div.elm a #[span.val {]
+            div.attr    text-decoration#[span.val : none;]
+            div.attr    user-select#[span.val : none;]
+            div.val }
+            |
+            |
+            div.elm p #[span.val {] #[span.attr color]#[span.val : #666; }]
+            |
+            |
+            div.elm ul, ol #[span.val {]
+            div.attr    margin#[span.val : 0;]
+            div.attr    padding#[span.val : 0;]
+            div.val }
+        h2 Features customize.css
+        p The advantages of customize.css are very many, and this is evident from the following:
+        ul
+          li Small file size and not a lot of comments
+          li Corrected some errors in browsers
+          li Improve usability with subtle improvements.
+        p One of the most important features that are not present in the frameworks and that many developers and programmers do#[br]not know is the ability to change the shape of the scroll bar, which gives an attractive appearance to customers.
+        pre
+          code
+            div.elm ::-webkit-scrollbar #[span.val {]
+            div.attr    width#[span.val : 10px;]
+            div.attr    height#[span.val : 5px;]
+            div.val }
+            |
+            |
+            div.elm ::-webkit-scrollbar-track #[span.val {]
+            div.attr    background#[span.val : var(--main-background, #fff);]
+            div.val }
+            |
+            |
+            div.elm ::-webkit-scrollbar-thumb #[span.val {]
+            div.attr    background#[span.val : var(--main-color, #07f);]
+            div.val }
+            |
+            |
+            div.elm ::-webkit-scrollbar-thumb:hover #[span.val {]
+            div.attr    border#[span.val : 1px solid #fff;]
+            div.val }
+        p Another advantage is the addition of features to some elements that must be placed each time you create a site, which reduces the time required to create the site, and these features include:
+        pre
+          code
+            div.elm form input:not([type="submit"]) #[span.val {]
+            div.attr    padding#[span.val : 10px 50px 10px 10px;]
+            div.attr    caret-color#[span.val : var(--main-color, #07f);]
+            div.val }
+            |
+            |
+            div.elm [type="submit"] #[span.val {]
+            div.attr    padding#[span.val : 10px;]
+            div.attr    cursor#[span.val : pointer;]
+            div.attr    text-transform#[span.val : capitalize;]
+            div.val }
+            |
+            |
+            div.elm form input:not([type="submit"]):focus#[span.val ,]
+            div.elm [type="submit"]:focus #[span.val {]
+            div.attr    outline#[span.val : 0;]
+            div.val }
+            |
+            |
+            div.elm textarea #[span.val {]
+            div.attr    resize#[span.val : none;]
+            div.val }
+        h2 Customize vs Normalize vs Reset
+        p customize.css, of course, overcomes normalize and reset, because customize has all the properties of normalize and reset, in addition to other properties, and it does not have a lot of annoying commints that increase the file space
+        br
+        br
+        h2 Browser support
+        p customize.css supports this browsers
+        ul
+          li Chrome
+          li Edge
+          li Firefox ESR+
+          li Safari 8+
+          li Opera
+    //- End about
+    include includes/footer.pug
+    div(class="toggle_2 button center-flex")
+    include includes/loading.pug

@@ -1,0 +1,41 @@
+{
+  "name": "customize.css",
+  "version": "2.0.0",
+  "description": "Customize.css is Modern Alternative To Reset Css & Html Elements",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kareem-m/customize.css.git"
+  },
+  "keywords": [
+    "css-rest"
+  ],
+  "author": "Kareem Mohamed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kareem-m/customize.css/issues"
+  },
+  "homepage": "https://github.com/kareem-m/customize.css#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-livereload": "^4.0.2",
+    "gulp-pug": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.49.9"
+  },
+  "dependencies": {
+    "static-server": "^2.2.1"
+  },
+  "browserslist": [
+    "last 2 version",
+    "> 2%"
+  ]
+}
